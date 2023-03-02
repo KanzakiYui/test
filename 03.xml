@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+  <Ad id="621461">
+    <InLine>
+      <AdSystem><![CDATA[Wootag Ads]]></AdSystem>
+      <AdTitle><![CDATA[EN JULIES GUASH MY]]></AdTitle>
+      <Description><![CDATA[]]></Description>
+      <Impression><![CDATA[https://www.wootag.com/api/v1/data/track/event/621461/imp?network=Others&network_id=100&tid=7801&bid=603774&playback_duration=30&ctype=js&adformat=VPAID&rand=636486cc17f44&vertical=FOOD%5Cu0026template%3DSHOPPABLE%5Cu0026touchpoint%3DSEEKBAR]]></Impression>
+      <Creatives>
+        <Creative sequence="1" id="B34E6C-12BC-CE27">
+          <Linear>
+            <Duration>00:00:30</Duration>
+            <TrackingEvents>
+              <Tracking event="start"><![CDATA[https://www.wootag.com/api/v1/data/track/event/621461/str?network=Others&network_id=100&tid=7801&bid=603774&playback_duration=30&ctype=js&adformat=VPAID&rand=636486cc17fa2]]></Tracking>
+              <Tracking event="firstQuartile"><![CDATA[https://www.wootag.com/api/v1/data/track/event/621461/frq?network=Others&network_id=100&tid=7801&bid=603774&playback_duration=30&ctype=js&adformat=VPAID&rand=636486cc17fee]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[https://www.wootag.com/api/v1/data/track/event/621461/mid?network=Others&network_id=100&tid=7801&bid=603774&playback_duration=30&ctype=js&adformat=VPAID&rand=636486cc18039]]></Tracking>
+              <Tracking event="thirdQuartile"><![CDATA[https://www.wootag.com/api/v1/data/track/event/621461/thq?network=Others&network_id=100&tid=7801&bid=603774&playback_duration=30&ctype=js&adformat=VPAID&rand=636486cc18084]]></Tracking>
+              <Tracking event="complete"><![CDATA[https://www.wootag.com/api/v1/data/track/event/621461/com?network=Others&network_id=100&tid=7801&bid=603774&playback_duration=30&ctype=js&adformat=VPAID&rand=636486cc180cf]]></Tracking>
+              <Tracking event="pause"><![CDATA[https://www.wootag.com/api/v1/data/track/event/621461/pau?network=Others&network_id=100&tid=7801&bid=603774&playback_duration=30&ctype=js&adformat=VPAID&rand=636486cc1811a]]></Tracking>
+              <Tracking event="resume"><![CDATA[https://www.wootag.com/api/v1/data/track/event/621461/res?network=Others&network_id=100&tid=7801&bid=603774&playback_duration=30&ctype=js&adformat=VPAID&rand=636486cc18164]]></Tracking>
+              <Tracking event="rewind"><![CDATA[https://www.wootag.com/api/v1/data/track/event/621461/rew?network=Others&network_id=100&tid=7801&bid=603774&playback_duration=30&ctype=js&adformat=VPAID&rand=636486cc181ae]]></Tracking>
+              <Tracking event="fullscreen"><![CDATA[https://www.wootag.com/api/v1/data/track/event/621461/fsc?network=Others&network_id=100&tid=7801&bid=603774&playback_duration=30&ctype=js&adformat=VPAID&rand=636486cc181f9]]></Tracking>
+              <Tracking event="close"><![CDATA[https://www.wootag.com/api/v1/data/track/event/621461/clo?network=Others&network_id=100&tid=7801&bid=603774&playback_duration=30&ctype=js&adformat=VPAID&rand=636486cc18244]]></Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickTracking><![CDATA[https://www.wootag.com/api/v1/data/track/event/621461/clt?network=Others&network_id=100&tid=7801&bid=603774&playback_duration=30&ctype=js&adformat=VPAID&rand=636486cc1828e]]></ClickTracking>
+            </VideoClicks>
+            <AdParameters><![CDATA[{"id":"A73A5A-E6A0-0FDDB34E6C-12BC-CE27","cdn":"https:\/\/cdn.wootag.com\/","duration":50,"use_custom_events":"0","srv":"https:\/\/www.wootag.com\/","static":"https:\/\/cdn.wootag.com\/","videos":[{"mimetype":"video\/mp4","url":"https:\/\/cdn.wootag.com\/A73A5A-E6A0-0FDD\/B34E6C-12BC-CE27\/~AD.SIZE~.mp4"}],"size":"[240,360]","network":"Others","tid":"7801","release_version":"1.9.0_97","videoclicks":[{"clicktracking":[],"clickthrough":[]}]}]]></AdParameters>
+            <MediaFiles>
+              <MediaFile delivery="progressive" width="720" height="405" type="application/javascript" apiFramework="VPAID"><![CDATA[https://cdn.wootag.com/player/v3/bundle.js?v=1.9.0_97]]></MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
