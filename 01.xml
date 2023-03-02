@@ -1,8 +1,13 @@
 <VAST version="3.0">
     <Ad id="20011">
+        <Test>
+            <CompanionClickThrough>
+                <![CDATA[https://www.amazon.com]]>
+            </CompanionClickThrough>
+        </Test>
         <Wrapper>
             <AdSystem version="4.0">iabtechlab</AdSystem>
-            <VASTAdTagURI><![CDATA[https://www.google.ca]]></VASTAdTagURI>
+            <VASTAdTagURI><![CDATA[https://raw.githubusercontent.com/KanzakiYui/test/main/02.xml]]></VASTAdTagURI>
 
             <Error>http://example.com/error</Error>
 
