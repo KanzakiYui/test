@@ -39,12 +39,12 @@
               <JavaScriptResource apiFramework="omid" />
               <TrackingEvents />
               <VerificationParameters />
-            <Verification>
+            </Verification>
             <Verification>
               <JavaScriptResource apiFramework="tester" />
               <TrackingEvents />
               <VerificationParameters />
-            <Verification>
+            </Verification>
           </AdVerifications>
         </Extension>
       </Extensions>
