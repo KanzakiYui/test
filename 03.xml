@@ -32,6 +32,19 @@
           </Linear>
         </Creative>
       </Creatives>
+      <Extension type="AdVerifications">
+        <AdVerifications>
+          <Verification>
+            <JavaScriptResource apiFramework="omid" />
+            <TrackingEvents />
+            <VerificationParameters />
+          <Verification>
+          <Verification>
+            <JavaScriptResource apiFramework="tester" />
+            <TrackingEvents />
+            <VerificationParameters />
+          <Verification>
+        </AdVerifications>
     </InLine>
   </Ad>
 </VAST>
