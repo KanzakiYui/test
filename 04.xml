@@ -1,0 +1,58 @@
+<VAST version="3.0">
+  <Ad id="1234">
+    <InLine>
+      <AdSystem>Acme Ad Server</AdSystem>
+      <AdTitle>Example Audio Ad</AdTitle>
+      <Impression id="audio_impression">
+        <![CDATA[https://example.com/audio_impression]]>
+      </Impression>
+      <Creatives>
+        <Creative>
+          <Linear>
+            <Duration>00:00:15</Duration>
+            <MediaFiles>
+              <MediaFile type="audio/mp3" bitrate="128" delivery="progressive" width="0" height="0">
+                <![CDATA[https://example.com/welcome.mp3]]>
+              </MediaFile>
+              <MediaFile type="audio/flac" bitrate="256" delivery="progressive" width="0" height="0">
+                <![CDATA[https://example.com/hello.mp3]]>
+              </MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+        <Creative>
+          <CompanionAds>
+            <Companion id="1234" width="300" height="250">
+              <StaticResource creativeType="image/png">
+                <![CDATA[https://example.com/companion.png]]>
+              </StaticResource>
+              <TrackingEvents>
+                <Tracking event="creativeView">
+                  <![CDATA[https://example.com/companion_view]]>
+                </Tracking>
+              </TrackingEvents>
+            </Companion>
+            <Companion id="5678" width="728" height="90">
+              <IFrameResource>
+                <![CDATA[https://example.com/companion.html]]>
+              </IFrameResource>
+              <TrackingEvents>
+                <Tracking event="creativeView">
+                  <![CDATA[https://example.com/companion_view]]>
+                </Tracking>
+              </TrackingEvents>
+            </Companion>
+          </CompanionAds>
+        </Creative>
+      </Creatives>
+      <Extensions>
+        <Extension type="iab-Count">
+            <total_available>
+                <![CDATA[ 2 ]]>
+            </total_available>
+        </Extension>
+      </Extensions>
+    </InLine>
+  </Ad>
+</VAST>
+               
