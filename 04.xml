@@ -44,6 +44,16 @@
               </TrackingEvents>
               <CompanionClickThrough><![CDATA[http://example.com/companion_landing_offset]]></CompanionClickThrough>
             </Companion>
+            <Companion id="abcd" width="999" height="190">
+              <HTMLResource width="300" height="250">
+                <![CDATA[
+                  <a href="https://example.com">
+                    <img src="https://example.com/companion.png" width="300" height="250" />
+                  </a>
+                ]]>
+              </HTMLResource>
+              <CompanionClickTracking><![CDATA[https://example.com/click-tracking-url]]></CompanionClickTracking>
+            </Companion>
           </CompanionAds>
         </Creative>
       </Creatives>
