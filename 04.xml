@@ -11,7 +11,7 @@
           <Linear>
             <Duration>00:00:15</Duration>
             <MediaFiles>
-              <MediaFile type="audio/mp3" bitrate="128" delivery="progressive" width="0" height="0">
+              <MediaFile type="audio/mp4" bitrate="128" delivery="progressive" width="0" height="0">
                 <![CDATA[https://example.com/welcome.mp3]]>
               </MediaFile>
               <MediaFile type="audio/flac" bitrate="256" delivery="progressive" width="0" height="0">
@@ -31,6 +31,7 @@
                   <![CDATA[https://example.com/companion_view]]>
                 </Tracking>
               </TrackingEvents>
+              <CompanionClickThrough><![CDATA[http://example.com/companion_landing]]></CompanionClickThrough>
             </Companion>
             <Companion id="5678" width="728" height="90">
               <IFrameResource>
@@ -41,15 +42,29 @@
                   <![CDATA[https://example.com/companion_view]]>
                 </Tracking>
               </TrackingEvents>
+              <CompanionClickThrough><![CDATA[http://example.com/companion_landing_offset]]></CompanionClickThrough>
             </Companion>
           </CompanionAds>
         </Creative>
       </Creatives>
       <Extensions>
-        <Extension type="iab-Count">
-            <total_available>
-                <![CDATA[ 2 ]]>
-            </total_available>
+        <Extension type="AdVerifications">
+          <AdVerifications>
+            <Verification>
+              <JavaScriptResource apiFramework="VPAID">
+                <![CDATA[http://example.com/vpaid.js]]>
+              </JavaScriptResource>
+            </Verification>
+          </AdVerifications>
+        </Extension>
+        <Extension type="AdVerifications">
+          <AdVerifications>
+            <Verification>
+              <JavaScriptResource apiFramework="OMID">
+                <![CDATA[http://example.com/omid.js]]>
+              </JavaScriptResource>
+            </Verification>
+          </AdVerifications>
         </Extension>
       </Extensions>
     </InLine>
