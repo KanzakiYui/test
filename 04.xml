@@ -9,44 +9,26 @@
       <Creatives>
         <Creative>
           <Linear>
-            <Duration>00:00:15</Duration>
+            <Duration>00:00:10</Duration>
             <MediaFiles>
-              <MediaFile type="audio/mp4" bitrate="128" delivery="progressive" width="0" height="0">
-                <![CDATA[https://example.com/welcome.mp3]]>
+              <MediaFile id="RMP" delivery="progressive" width="0" height="0" type="audio/mp4" bitrate="198">
+              <![CDATA[ https://www.radiantmediaplayer.com/vast/mp4s/audio-ad.m4a ]]>
               </MediaFile>
-              <MediaFile type="audio/flac" bitrate="256" delivery="progressive" width="0" height="0">
-                <![CDATA[https://example.com/hello.mp3]]>
+              <MediaFile id="RMP" delivery="progressive" width="0" height="0" type="audio/mpeg" bitrate="128">
+              <![CDATA[ https://www.radiantmediaplayer.com/vast/mp4s/audio-ad.mp3 ]]>
               </MediaFile>
             </MediaFiles>
           </Linear>
         </Creative>
         <Creative>
           <CompanionAds>
-            <Companion id="1234" width="300" height="250">
+            <Companion id="1232" width="300" height="250" assetWidth="250" assetHeight="200" expandedWidth="350" expandedHeight="250">
               <StaticResource creativeType="image/png">
-                <![CDATA[https://example.com/companion.png]]>
+                    <![CDATA[https://www.iab.com/wp-content/uploads/2014/09/iab-tech-lab-6-644x290.png]]>
               </StaticResource>
-              <TrackingEvents>
-                <Tracking event="creativeView">
-                  <![CDATA[https://example.com/companion_view]]>
-                </Tracking>
-              </TrackingEvents>
-              <CompanionClickThrough><![CDATA[http://example.com/companion_landing]]></CompanionClickThrough>
-            </Companion>
-            <Companion id="5678" width="728" height="90">
-              <IFrameResource>
-                <![CDATA[https://example.com/companion.html]]>
-              </IFrameResource>
-              <TrackingEvents>
-                <Tracking event="creativeView">
-                  <![CDATA[https://example.com/companion_view]]>
-                </Tracking>
-              </TrackingEvents>
-              <CompanionClickThrough><![CDATA[http://example.com/companion_landing_offset]]></CompanionClickThrough>
-            </Companion>
-            <Companion id="abcd" width="999" height="190">
-              <HTMLResource><![CDATA[<html><body>I'm a companion</body></html>]]></HTMLResource>
-              <CompanionClickTracking><![CDATA[https://example.com/click-tracking-url]]></CompanionClickTracking>
+              <CompanionClickThrough>
+                    <![CDATA[https://iabtechlab.com]]>
+              </CompanionClickThrough>
             </Companion>
           </CompanionAds>
         </Creative>
@@ -74,4 +56,3 @@
     </InLine>
   </Ad>
 </VAST>
-               
