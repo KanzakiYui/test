@@ -1,58 +1,44 @@
 <VAST version="3.0">
-  <Ad id="1234">
+  <Ad id="bid1">
     <InLine>
-      <AdSystem>Acme Ad Server</AdSystem>
-      <AdTitle>Example Audio Ad</AdTitle>
-      <Impression id="audio_impression">
-        <![CDATA[https://example.com/audio_impression]]>
-      </Impression>
+      <AdSystem>Amazon</AdSystem>
+      <AdTitle />
       <Creatives>
-        <Creative>
+        <Creative sequence="0" id="519529">
           <Linear>
-            <Duration>00:00:10</Duration>
+            <Duration>00:00:30</Duration>
+            <VideoClicks>
+              <ClickThrough>
+                <![CDATA[ https://www.amazon.ca ]]>
+              </ClickThrough>
+              <CustomClick />
+            </VideoClicks>
             <MediaFiles>
-              <MediaFile id="RMP" delivery="progressive" width="0" height="0" type="audio/mp4" bitrate="198">
-              <![CDATA[ https://www.radiantmediaplayer.com/vast/mp4s/audio-ad.m4a ]]>
+              <MediaFile delivery="progressive" bitrate="147" width="300" height="250" type="video/webm" scalable="true" maintainAspectRatio="true">
+                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_300x250_500kbps.webm ]]>
               </MediaFile>
-              <MediaFile id="RMP" delivery="progressive" width="0" height="0" type="audio/mpeg" bitrate="128">
-              <![CDATA[ https://www.radiantmediaplayer.com/vast/mp4s/audio-ad.mp3 ]]>
+              <MediaFile delivery="progressive" bitrate="646" width="300" height="250" type="video/mp4" scalable="true" maintainAspectRatio="true">
+                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_300x250_500kbps.mp4 ]]>
+              </MediaFile>
+              <MediaFile delivery="progressive" bitrate="2120" width="1280" height="720" type="video/mp4" scalable="true" maintainAspectRatio="true">
+                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_1280x720_2000kbps.mp4 ]]>
+              </MediaFile>
+              <MediaFile delivery="progressive" bitrate="361" width="640" height="360" type="video/webm" scalable="true" maintainAspectRatio="true">
+                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_640x360_800kbps.webm ]]>
+              </MediaFile>
+              <MediaFile delivery="progressive" bitrate="941" width="640" height="360" type="video/mp4" scalable="true" maintainAspectRatio="true">
+                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_640x360_800kbps.mp4 ]]>
+              </MediaFile>
+              <MediaFile delivery="progressive" bitrate="150" width="320" height="180" type="video/webm" scalable="true" maintainAspectRatio="true">
+                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_320x180_500kbps.webm ]]>
+              </MediaFile>
+              <MediaFile delivery="progressive" bitrate="646" width="320" height="180" type="video/mp4" scalable="true" maintainAspectRatio="true">
+                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_320x180_500kbps.mp4 ]]>
               </MediaFile>
             </MediaFiles>
           </Linear>
         </Creative>
-        <Creative>
-          <CompanionAds>
-            <Companion id="1232" width="300" height="250" assetWidth="250" assetHeight="200" expandedWidth="350" expandedHeight="250">
-              <StaticResource creativeType="image/png">
-                    <![CDATA[https://www.iab.com/wp-content/uploads/2014/09/iab-tech-lab-6-644x290.png]]>
-              </StaticResource>
-              <CompanionClickThrough>
-                    <![CDATA[https://iabtechlab.com]]>
-              </CompanionClickThrough>
-            </Companion>
-          </CompanionAds>
-        </Creative>
       </Creatives>
-      <Extensions>
-        <Extension type="AdVerifications">
-          <AdVerifications>
-            <Verification>
-              <JavaScriptResource apiFramework="VPAID">
-                <![CDATA[http://example.com/vpaid.js]]>
-              </JavaScriptResource>
-            </Verification>
-          </AdVerifications>
-        </Extension>
-        <Extension type="AdVerifications">
-          <AdVerifications>
-            <Verification>
-              <JavaScriptResource apiFramework="OMID">
-                <![CDATA[http://example.com/omid.js]]>
-              </JavaScriptResource>
-            </Verification>
-          </AdVerifications>
-        </Extension>
-      </Extensions>
     </InLine>
   </Ad>
 </VAST>
