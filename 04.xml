@@ -1,44 +1,120 @@
 <VAST version="3.0">
-  <Ad id="bid1">
-    <InLine>
-      <AdSystem>Amazon</AdSystem>
-      <AdTitle />
-      <Creatives>
-        <Creative sequence="0" id="519529">
-          <Linear>
-            <Duration>00:00:30</Duration>
-            <VideoClicks>
-              <ClickThrough>
-                <![CDATA[ https://www.amazon.ca ]]>
-              </ClickThrough>
-              <CustomClick />
-            </VideoClicks>
-            <MediaFiles>
-              <MediaFile delivery="progressive" bitrate="147" width="300" height="250" type="video/webm" scalable="true" maintainAspectRatio="true">
-                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_300x250_500kbps.webm ]]>
-              </MediaFile>
-              <MediaFile delivery="progressive" bitrate="646" width="300" height="250" type="video/mp4" scalable="true" maintainAspectRatio="true">
-                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_300x250_500kbps.mp4 ]]>
-              </MediaFile>
-              <MediaFile delivery="progressive" bitrate="2120" width="1280" height="720" type="video/mp4" scalable="true" maintainAspectRatio="true">
-                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_1280x720_2000kbps.mp4 ]]>
-              </MediaFile>
-              <MediaFile delivery="progressive" bitrate="361" width="640" height="360" type="video/webm" scalable="true" maintainAspectRatio="true">
-                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_640x360_800kbps.webm ]]>
-              </MediaFile>
-              <MediaFile delivery="progressive" bitrate="941" width="640" height="360" type="video/mp4" scalable="true" maintainAspectRatio="true">
-                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_640x360_800kbps.mp4 ]]>
-              </MediaFile>
-              <MediaFile delivery="progressive" bitrate="150" width="320" height="180" type="video/webm" scalable="true" maintainAspectRatio="true">
-                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_320x180_500kbps.webm ]]>
-              </MediaFile>
-              <MediaFile delivery="progressive" bitrate="646" width="320" height="180" type="video/mp4" scalable="true" maintainAspectRatio="true">
-                <![CDATA[ https://stackadaptvid.s3.amazonaws.com/transcoded/creatives/4/0d7fc7db-4218-49e9-bc3e-24796dd8e10c_320x180_500kbps.mp4 ]]>
-              </MediaFile>
-            </MediaFiles>
-          </Linear>
-        </Creative>
-      </Creatives>
-    </InLine>
+  <Ad id="Ad001">
+      <InLine>
+          <AdSystem>Acme Ad Server</AdSystem>
+          <AdTitle>Example Audio Ad</AdTitle>
+          <Impression id="audio_impression">
+              <![CDATA[https://example.com/audio_impression]]>
+          </Impression>
+          <Creatives>
+              <Creative id="Creative01">
+                  <Linear>
+                      <Duration>00:00:15</Duration>
+                      <MediaFiles>
+                          <MediaFile id="mf01" type="audio/mp4" bitrate="128" delivery="progressive" width="0" height="0" apiFramework="CUSTOM">
+                              <![CDATA[https://example.com/01.mp3]]>
+                          </MediaFile>
+                          <MediaFile id="mf02" type="audio/flac" bitrate="256" delivery="progressive" width="0" height="0">
+                              <![CDATA[https://example.com/02.mp3]]>
+                          </MediaFile>
+                      </MediaFiles>
+                  </Linear>
+              </Creative>
+              <Creative id="Creative02">
+                  <CompanionAds>
+                      <Companion id="1234" width="300" height="250">
+                          <StaticResource creativeType="image/png">
+                              <![CDATA[https://example.com/companion.png]]>
+                          </StaticResource>
+                          <TrackingEvents>
+                              <Tracking event="creativeView">
+                                  <![CDATA[https://example.com/companion_view]]>
+                              </Tracking>
+                          </TrackingEvents>
+                          <CompanionClickThrough>
+                              <![CDATA[http://example.com/companion_landing]]>
+                          </CompanionClickThrough>
+                      </Companion>
+                  </CompanionAds>
+                  <CompanionAds>
+                      <Companion id="5678" width="728" height="90">
+                          <IFrameResource>
+                              <![CDATA[https://example.com/companion.html]]>
+                          </IFrameResource>
+                          <TrackingEvents>
+                              <Tracking event="creativeView">
+                                  <![CDATA[https://example.com/companion_view]]>
+                              </Tracking>
+                          </TrackingEvents>
+                          <CompanionClickThrough>
+                              <![CDATA[http://example.com/companion_landing_offset]]>
+                          </CompanionClickThrough>
+                      </Companion>
+                      <Companion id="abcd" width="999" height="190">
+                          <HTMLResource>
+                              <![CDATA[<html><body>I'm a companion</body></html>]]>
+                          </HTMLResource>
+                          <CompanionClickTracking>
+                              <![CDATA[https://example.com/click-tracking-url]]>
+                          </CompanionClickTracking>
+                      </Companion>
+                  </CompanionAds>
+              </Creative>
+              <Creative id="Creative03">
+                  <Linear>
+                      <Duration>00:00:15</Duration>
+                      <MediaFiles>
+                          <MediaFile id="mf03" type="audio/aac" bitrate="192" delivery="progressive" width="0" height="0" apiFramework="VPAID">
+                              <![CDATA[https://example.com/03.mp3]]>
+                          </MediaFile>
+                          <MediaFile id="mf04" type="audio/wav" bitrate="512" delivery="progressive" width="0" height="0" apiFramework="VAST">
+                              <![CDATA[https://example.com/04.mp3]]>
+                          </MediaFile>
+                          <MediaFile id="mf05" type="application/javascript" bitrate="512" delivery="progressive" width="0" height="0" apiFramework="VPAID">
+                              <![CDATA[https://example.com/05.mp3]]>
+                          </MediaFile>
+                      </MediaFiles>
+                  </Linear>
+              </Creative>
+          </Creatives>
+          <Extensions>
+              <Extension type="AdVerifications">
+                  <AdVerifications>
+                      <Verification>
+                          <JavaScriptResource apiFramework="VPAID 1.0">
+                              <![CDATA[http://example.com/vpaid1.0.js]]>
+                          </JavaScriptResource>
+                      </Verification>
+                  </AdVerifications>
+              </Extension>
+              <Extension type="AdVerifications">
+                  <AdVerifications>
+                      <Verification>
+                          <JavaScriptResource apiFramework="OMID">
+                              <![CDATA[http://example.com/omid.js]]>
+                          </JavaScriptResource>
+                      </Verification>
+                  </AdVerifications>
+              </Extension>
+              <Extension type="custom">
+                  <AdVerifications>
+                      <Verification>
+                          <JavaScriptResource apiFramework="VPAID 2.0">
+                              <![CDATA[http://example.com/vpaid2.0.js]]>
+                          </JavaScriptResource>
+                      </Verification>
+                  </AdVerifications>
+              </Extension>
+              <Extension type="AdVerifications">
+                  <AdVerifications>
+                      <Verification>
+                          <JavaScriptResource apiFramework="MRAID 2.0">
+                              <![CDATA[http://example.com/mraid2.0.js]]>
+                          </JavaScriptResource>
+                      </Verification>
+                  </AdVerifications>
+              </Extension>
+          </Extensions>
+      </InLine>
   </Ad>
 </VAST>
