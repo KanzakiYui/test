@@ -64,8 +64,8 @@
                   <Linear>
                       <Duration>00:00:15</Duration>
                       <MediaFiles>
-                          <MediaFile id="mf03" type="audio/aac" bitrate="192" delivery="progressive" width="0" height="0" apiFramework="VPAID">
-                              <![CDATA[https://example.com/03.mp3]]>
+                          <MediaFile id="mf03" type="audio/vast" bitrate="192" delivery="progressive" width="0" height="0" apiFramework="VPAID">
+                              <![CDATA[https://example.com/error.mp3]]>
                           </MediaFile>
                           <MediaFile id="mf04" type="audio/wav" bitrate="512" delivery="progressive" width="0" height="0" apiFramework="VAST">
                               <![CDATA[https://example.com/04.mp3]]>
